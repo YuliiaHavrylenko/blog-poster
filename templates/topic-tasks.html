@@ -5,18 +5,24 @@
     <title>Topic Tasks</title>
 </head>
 <body>
+<h1>{{ topic.title }}</h1>
 <ul>
-  <li>Task 1</li>
-  <li>Task 2</li>
-  <li>Task 3</li>
+  {% for task in tasks %}
+    <li>{{ task.description }}</li>
+    {% endfor %}
 </ul>
 <h3>Add a New Task</h3>
-<form action="/add/task/{{ topic_id }}" method="POST">
+<form action="/add/task/{{ topic.topic_id }}" method="POST">
   <div>
     <label for="task">Task</label>
     <input type="text" name="task-description">
   </div>
   <input type="submit" value="Add Task" />
 </form>
+<div class="message">
+    {% for category, message in get_flashed_messages(with_categories=true) %}
+    <div style="color: {{ category }};"> {{ message }} </div>
+    {% endfor %}
+</div>
 </body>
 </html>
