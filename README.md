@@ -12,7 +12,7 @@ The application allows you to create new topics, you can attach any number of ta
 </p>
 
 ### About the project.
-The project is completely done with FLASK. For the front-end part, HTML and CSS were used. PostgreSQL was used as a database.
+The project is completely done with FLASK. For the front-end part HTML and CSS were used. PostgreSQL was used as a database.
 
 ## Project setup
 
