@@ -22,7 +22,7 @@ body {
 .page {
   height: 100%;
   width: 1100px;
-  background-color: rgba(230, 244, 125, 0.2);
+  background-color: hsla(180, 100%, 25%, 0.789);
   padding: 50px;
 }
 
